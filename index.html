@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuchiBank</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="./script/script.js" defer type="module"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <img src="./img/LOGO.svg" alt="BuchiBank" id="logo">
+        <nav class="nav-moedas">
+            <ul class="lista-moedas">
+                <li class="moeda" data-moeda="USD">USD</li>
+                <li class="moeda" data-moeda="EUR">EUR</li>
+                <li class="moeda" data-moeda="AUD">AUD</li>
+                <li class="moeda" data-moeda="CAD">CAD</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-infos">
+        <h1 id="moeda-info">O valor atual do USD é: <span id="valor-moeda">R$ 4,85</span></h1>
+        <div class="grafico">
+            <canvas id="graficoMoeda"></canvas>
+        </div>
+        
+    </main>
+    <aside class="valores-moeda"></aside>
+    
+    
+</body>
+</html>
