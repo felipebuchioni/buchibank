@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuchiBank</title>
+    <link rel="stylesheet" href="./style/moneycss.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/app.js" defer type="module"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="index.html"><img src="./img/LOGO.svg" alt="BuchiBank" id="logo"></a>
+    </header>
+
+    <main class="main-infos">
+        <h1 class="saldo-title">Saldo:</h1>
+
+        <section class="saldo-section">
+          <div class="saldo-div">
+            <p>R$</p>
+            <h2 id="saldo"></h2>
+          </div>
+          <input type="checkbox" name="show-hide" id="show-hide">
+          <label for="show-hide" class="show-hide-label"></label>
+        </section>
+
+        <form action="submit" id="form-movimento">
+          <div class="btns">
+            <button id="botao-entrada" class="movimento-btn" data-type="adicionar" type="button">Entrada <i class="fa-solid fa-circle-plus"></i></button>
+            <button id="botao-saida" class="movimento-btn" data-type="remover" type="button">Saída <i class="fa-solid fa-circle-minus"></i></button>
+          </div>
+          <input type="text" name="valor" id="valor" placeholder="Insira o valor desejado!">
+          <p class="alert-text">Tetse</p>
+        </form>
+
+        
+    </main>
+    
+</body>
+</html>

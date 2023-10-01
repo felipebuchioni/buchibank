@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    --primary-color: #222222;
+    --second-color: #126D6E;
+    --terc-color: #064343;
+    --fourth-color: #E4E4E4;
+    --red: #cf4b4b;
+    --green: #56c756;
+    
+}
+
+body {
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    background-color: var(--terc-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    max-width: 15%;
+    margin: 30px 0px 30px 0px;
+}
+
+.header a {
+  width: 100%;
+  text-align: center;
+}
+
+.saldo-title {
+  font-size: 2em;
+  color: var(--second-color);
+}
+
+.saldo-section {
+  width: 40%;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.saldo-div {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+  font-size: 3.5em;
+  display: flex;
+  color: var(--fourth-color);
+}
+
+.saldo-div p {
+
+  color: var(--terc-color);
+}
+
+#saldo {
+
+  color: var(--fourth-color);
+}
+
+#show-hide {
+  display: none;
+  cursor: pointer;
+}
+
+.show-hide-label {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-image: url('../img/fechado.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5%;
+  transition: 0.2s;
+  filter: invert();
+}
+
+#show-hide:checked ~ .show-hide-label {
+  background-image: url('../img/aberto.svg');
+  width: 35px;
+  right: 5.4%;
+}
+
+
+
+h1 {
+    font-weight: 400;
+    color: var(--fourth-color);
+}
+
+.main-infos {
+    width: 100vw;
+    padding: 25px 0px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#form-movimento {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 10px 10px;
+}
+
+.movimento-btn {
+  font-size: 2em;
+  background-color: transparent;
+  color: var(--second-color);
+  border: 2px solid var(--second-color);
+  min-width: 100%;
+  padding: 0.3em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.movimento-btn:hover {
+  background-color: var(--second-color);
+  color: var(--primary-color);
+}
+
+#valor {
+  display: none;
+  font-size: 1.2em;
+  width: 40%;
+  background-color: transparent;
+  border: 2px solid var(--second-color);
+  height: 50px;
+  padding: 0.3em 1em;
+  outline: none;
+  color: var(--fourth-color);
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+#valor:focus {
+  box-shadow: 0px 0px 20px var(--terc-color);
+  width: 50%;
+}
+
+.alert-text {
+  color: var(--red);
+  display: none;
+}
+
+.registro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px 0px;
+}
+
+.movimento-title {
+  color: var(--fourth-color);
+}
+
+.movimento-valor {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.movimento-lista {
+  width: 70%;
+  color: var(--fourth-color)
+}
+
+.movimento-item-adicionar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.adicionar {
+  color: var(--green);
+}
